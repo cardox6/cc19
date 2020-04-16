@@ -1,1 +1,1 @@
-FLASK_APP=microblog.py
+FLASK_APP=covid19.py
