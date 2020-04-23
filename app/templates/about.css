@@ -1,51 +1,55 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
   }
-  
-body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
- 
-/* The grid container */
+
 .grid-container {
   display: grid;
+  height: 100vh ;
+  width: 100vw;
+  grid-template-columns: repeat(12, 8.33vw);
+  grid-template-rows: repeat(12, 8.33vh); 
+  gap: 1px 1px;
   grid-template-areas: 
-    'header header header header header header' 
-    'middle middle middle middle middle middle' 
-    'footer footer footer footer footer footer';
-} 
-/* Style the header */
-.header {
-    grid-area: header;
-    background-color: #f1f1f1;
-    padding: 30px;
-    text-align: left;
-    font-size: 35px;
+  "Header Header Header Header Header Header Header Header Header Header Header Header" 
+  "Header Header Header Header Header Header Header Header Header Header Header Header" 
+  "Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav" 
+  "Main Main Main Main Main Main Main Main Main Main Main Main" "Main Main Main Main Main Main Main Main Main Main Main Main" 
+  "Main Main Main Main Main Main Main Main Main Main Main Main" "Main Main Main Main Main Main Main Main Main Main Main Main" 
+  "Main Main Main Main Main Main Main Main Main Main Main Main" "Main Main Main Main Main Main Main Main Main Main Main Main" "Main Main Main Main Main Main Main Main Main Main Main Main" "Main Main Main Main Main Main Main Main Main Main Main Main" 
+  "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer";
 }
-  
-.tableauPlaceholder,
-/* Style the middle column */
-.tableauPlaceholder {
-    grid-area: middle;
-  }
 
-/* Style the footer */
-.footer {
-    grid-area: footer;
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-  }
-  
- .Nav {
-   grid-area: nav;
+.Header {
+  display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; */
+  gap: 1px 1px;
+  grid-template-areas: ". . ." ". . .";
+  grid-area: Header;
+}
 
+.Footer { grid-area: Footer; }
+
+.Nav { 
+  grid-area: Nav;
+  grid-column: 11;
+  align-items: end;
  }
-  /* The Overlay (background) */
-.overlay {
+
+.Main { grid-area: Main; }
+
+/* Temporary grid borders to visualize areas*/
+.grid-container * {
+  border: 1px solid red;
+  position: relative;
+}
+/* */
+
+ /* The Overlay (background) */
+ .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */    
-  height: 100%;
-  width: 0;
+  height: 0%;
+  width: 100%;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
@@ -97,5 +101,3 @@ body {
     right: 35px;
   }
 }
-
-/* */

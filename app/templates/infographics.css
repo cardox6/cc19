@@ -1,15 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    margin: 2%;
+   /* margin: 0,5%;
    /* border: 1px solid black; 
     background-color: #eeeaea;*/
 }
+
+/* Outline the grid and responsiveness*/
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+      'header header header header header header' 
+      'middle middle middle middle middle middle' 
+      'footer footer footer footer footer footer';
+  } 
 /* Style the header, middle, footer */
 .header {
     grid-area: header;
     background-color: #f1f1f1;
     padding: 30px;
-    text-align: center;
+    text-align: left;
     font-size: 35px;
   }
 
@@ -24,14 +37,6 @@ body{
     text-align: center;
   }
 
-  /* Outline the grid and responsiveness*/
-.grid-container {
-    display: grid;
-    grid-template-areas: 
-      'header header header header header header' 
-      'middle middle middle middle middle middle' 
-      'footer footer footer footer footer footer';
-  } 
 @media (max-width: 600px) {
     .grid-container  {
       grid-template-areas: 

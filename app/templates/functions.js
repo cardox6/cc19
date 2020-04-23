@@ -1,8 +1,3 @@
-
-function message(msg){
-    document.getElementById('output').innerHTML = msg + "event";
-}
-
 /* Funtions for Infographics gallery */
 function upDate(previewPic){
     var src = previewPic.getAttribute( "src" );
@@ -15,3 +10,14 @@ function unDo(){
     document.getElementById('image').style.backgroundImage = "url('')";
     document.getElementById('image').innerHTML= text;
 }
+
+/* Functions for Nav Menu */
+/* Open */
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+  
+  /* Close */
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
