@@ -28,7 +28,7 @@ def infographics():
 
 @app.route('/blog')
 def blog():
-    return render_template('blog.html', title="Blog")
+    return render_template('blog.html', title="Share Your Story")
 
 @app.route('/aboutcovid')
 def aboutcovid():
