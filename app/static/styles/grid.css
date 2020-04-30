@@ -58,6 +58,7 @@
     grid-area: Footer;
     background-color: whitesmoke;
     text-align: center;
+    position: bottom;
 }
   
 /* Temporary grid borders to visualize areas
