@@ -1,0 +1,23 @@
+@media(min-width:768px){
+.container-1, .container-2, .container-3{
+    display: flex;
+    /* align box height with the content 
+    align-items: flex-start*/
+    /* flex-direction: column */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5%;
+    max-height: inherit;
+    }
+}
+
+.container-1 div, .container-2 div, .container-3 div{
+        border: 1px #ccc solid;
+        padding: 10px;
+}
+
+.box{
+    flex: 2;
+    flex-basis: 25%;
+    margin: 1%;
+}

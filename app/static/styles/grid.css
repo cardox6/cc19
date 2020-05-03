@@ -52,13 +52,14 @@
   grid-area: Main;
   border-top: thick double black;
   border-bottom: black; 
+  position: relative;
  }
 
 .Footer { 
     grid-area: Footer;
     background-color: whitesmoke;
     text-align: center;
-    position: bottom;
+    bottom: 0;
 }
   
 /* Temporary grid borders to visualize areas
