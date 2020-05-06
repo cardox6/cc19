@@ -3,13 +3,15 @@
 * {
     box-sizing: border-box;
     }
-  
+
+
 .grid-container {
     display: grid;
-    height: 100vh ;
-    width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow-y: scroll;
     grid-template-columns: repeat(12, 8.33vw);
-    grid-template-rows: repeat(12, 8.33vh); 
+    grid-template-rows: repeat(12, 8.33vh);
     gap: 1px 1px;
     grid-template-areas: 
     "Header Header Header Header Header Header Header Header Nav Nav Nav Nav" 
@@ -19,7 +21,7 @@
     "Main Main Main Main Main Main Main Main Main Main Main Main" "Main Main Main Main Main Main Main Main Main Main Main Main" 
     "Main Main Main Main Main Main Main Main Main Main Main Main" "Main Main Main Main Main Main Main Main Main Main Main Main" 
     "Main Main Main Main Main Main Main Main Main Main Main Main" "Main Main Main Main Main Main Main Main Main Main Main Main" 
-    "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer";
+    "Foot Foot Foot Foot Foot Foot Foot Foot Foot Foot Foot Foot";
     background-color: whitesmoke;
   }
   
@@ -47,7 +49,7 @@
     align-content: justify;
     font-weight: bold;
    }
-  
+
 .Main { 
   grid-area: Main;
   border-top: thick double black;
@@ -55,11 +57,10 @@
   position: relative;
  }
 
-.Footer { 
-    grid-area: Footer;
+.Foot { 
+    grid-area: Foot;
     background-color: whitesmoke;
     text-align: center;
-    bottom: 0;
 }
   
 /* Temporary grid borders to visualize areas

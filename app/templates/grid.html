@@ -4,32 +4,28 @@
 <div class="grid-container">
     <div class="Header"><h2>Clean Covid 19</h2></div>
 
- <!--   <div id="myNav" class="Nav">Navbar</div> -->
-
 <!-- Use any element to open/show the overlay navigation menu -->
-<div class="Nav" > <span onclick="openNav()">||MENU|| </span> </div>
+    <div class="Nav" > <span onclick="openNav()">||MENU|| </span> </div>
 <!-- The overlay -->
-<div id="myNav" class="overlay">
-
+    <div id="myNav" class="overlay">
 <!-- Button to close the overlay navigation -->
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-<!-- Overlay content -->
-<div class="overlay-content">
-<a href="{{ url_for ('index') }}">Main</a>
-<a href="{{ url_for ('aboutcovid') }}">About Covid 19</a>
-<a href="{{ url_for ('infographics')}}">Infographics</a>
-<a href="{{ url_for ('blog') }}">Share Your Story</a>
-
-</div> 
+  <!-- Overlay content -->
+      <div class="overlay-content">
+      <a href="{{ url_for ('index') }}">Main</a>
+      <a href="{{ url_for ('aboutcovid') }}">About Covid 19</a>
+      <a href="{{ url_for ('infographics')}}">Infographics</a>
+      <a href="{{ url_for ('blog') }}">Share Your Story</a>
+      </div> 
     </div>
 
   <div class="Main">
       {% block content %}{% endblock content %}
   </div>
-
-  <div class="Footer"> This is a learning website from Matias Cardone @ Code University. Thanks for visiting! </div>
-
-  </div>
+  
+    <div class="Foot"> This is a learning website from Matias Cardone @ Code University. Thanks for visiting! </div> 
+  <!-- -->
+</div>
 
 {% endblock layout %}
