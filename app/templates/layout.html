@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"="Clean Covid 19 provides realiable information regarding the Covid 19 pandemic.">
     <link rel="shortcut icon" type="image/png" href="/static/img/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/static/img/favicon.ico">
     <script src="../static/functions.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <link rel="stylesheet" type="text/css" href="../static/styles/main.css">
     <title>Clean Covid 19</title>
 
@@ -13,6 +15,12 @@
 <body>
   {% block layout %}  {% endblock layout %}
   
+  <df-messenger
+  intent="WELCOME"
+  chat-title="Agent Clean Covid 19"
+  agent-id="efb014d6-0e18-44bc-b887-ef82d8bfc3f3"
+  language-code="en"
+></df-messenger>
 </body>
 
   </html>

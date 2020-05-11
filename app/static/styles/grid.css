@@ -1,17 +1,22 @@
 /* Define general grid */
+html{
+  background-color: whitesmoke;
+}
+body{
+  margin: 0;
+}
 
 * {
     box-sizing: border-box;
     }
 
-
 .grid-container {
     display: grid;
     min-height: 100vh;
     max-width: 100vw;
-    overflow-y: scroll;
-    grid-template-columns: repeat(12, 8.33vw);
-    grid-template-rows: repeat(12, 8.33vh);
+    overflow: hidden;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
     gap: 1px 1px;
     grid-template-areas: 
     "Header Header Header Header Header Header Header Header Nav Nav Nav Nav" 
@@ -23,21 +28,18 @@
     "Main Main Main Main Main Main Main Main Main Main Main Main" "Main Main Main Main Main Main Main Main Main Main Main Main" 
     "Foot Foot Foot Foot Foot Foot Foot Foot Foot Foot Foot Foot";
     background-color: whitesmoke;
+    font-family: 'Krona One', sans-serif;
   }
   
 .Header {
-    display: grid;
-    /*grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr; */
     gap: 1px 1px;
-    grid-template-areas: ". . ." ". . .";
     grid-area: Header;
     background-color: whitesmoke;
     color: black;
     text-align: center;
     grid-column-start: 6;
     margin-top: 10%;
-    font-size: 100%;
+    padding: 2%;
   }
   
 .Nav { 
@@ -47,28 +49,25 @@
     background-color: whitesmoke;
     color: black;
     align-content: justify;
-    font-weight: bold;
+    padding: 2%;
    }
 
 .Main { 
   grid-area: Main;
+  position: relative;
+  /*overflow-y: scroll;*/
   border-top: thick double black;
   border-bottom: black; 
-  position: relative;
+  padding: 1%;
+  font-family: 'Roboto Condensed', sans-serif;
  }
 
 .Foot { 
     grid-area: Foot;
     background-color: whitesmoke;
     text-align: center;
+    padding: 0.5%;
 }
-  
-/* Temporary grid borders to visualize areas
-.grid-container * {
-    border: 1px solid red;
-    position: relative;
-  }
-*/
 
   /* Define the NavBar */
 /* The Overlay (background) */
@@ -99,7 +98,7 @@
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 26px;
     color: #818181;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
@@ -119,13 +118,13 @@
   }
   
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
+ @media screen and (max-height: 450px) {
+  .overlay a {font-size: 10px}
+  .overlay .closebtn {
+    font-size: 20px;
+    top: 15px;
+    right: 35px;
   }
+}
   
   

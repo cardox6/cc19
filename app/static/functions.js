@@ -1,23 +1,44 @@
-/* Funtions for Infographics gallery */
-function upDate(previewPic){
-    var src = previewPic.getAttribute( "src" );
-    document.getElementById('image').style.backgroundImage = "url('" + src + "')";
-    document.getElementById('image').innerHTML = previewPic.alt;
-}
-/*
-function unDo(){
-    var text = "Hover over an image below to display here.";
-    document.getElementById('image').style.backgroundImage = "url('')";
-    document.getElementById('image').innerHTML= text;
-} */
 
-/* Functions for Nav Menu */
-/* Open */
+// Functions for Nav Menu
+// Open
 function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-  }
-  
-  /* Close */
+  document.getElementById("myNav").style.height = "100%";
+}
+
+// Close
 function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
+  document.getElementById("myNav").style.height = "0%";
+}
+
+//
+// Slideshow - Infographics //
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
   }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+//

@@ -10,10 +10,10 @@ def index():
 def infographics():
     return render_template('infographics.html', title="Infographics")
 
-@app.route('/blog')
-def blog():
-    return render_template('blog.html', title="Share Your Story")
-
 @app.route('/aboutcovid')
 def aboutcovid():
     return render_template('aboutcovid.html', title="About Covid 19")
+
+@app.route('/check')
+def check():
+    return render_template('check.html', title="Check Yourself")
