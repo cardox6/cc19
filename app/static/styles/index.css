@@ -1,18 +1,18 @@
-
-#viz1589293259648{
+.desktop {
     margin: 5%;
-    display: block;
+    display:block;
 }
 
-#mobile{
+.mobile {
     display: none;
 }
 
-@media screen and (max-width: 500px) {
-    #viz1589293259648 {
-        display: none;
-    }
-    #viz1589293409148 {
+/* Responsiveness */
+@media screen and (max-width: 800px) {
+    .mobile {
         display: block;
+    }
+    .desktop {
+        display: none;
     }
 }

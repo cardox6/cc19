@@ -70,7 +70,7 @@ body{
 .overlay {
 /* Height & width depends on how you want to reveal the overlay (see JS below) */    
     height: 0%;
-    width: 25%;
+    width: 30%;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     right: 0;
@@ -138,5 +138,3 @@ body{
     font-size: 9px;
   }
 }
-
-  
