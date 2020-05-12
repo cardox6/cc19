@@ -13,7 +13,3 @@ def infographics():
 @app.route('/aboutcovid')
 def aboutcovid():
     return render_template('aboutcovid.html', title="About Covid 19")
-
-@app.route('/check')
-def check():
-    return render_template('check.html', title="Check Yourself")

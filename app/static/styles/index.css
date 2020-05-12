@@ -1,3 +1,18 @@
-.tableauPlaceholder{
+
+#viz1589293259648{
     margin: 5%;
+    display: block;
+}
+
+#mobile{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    #viz1589293259648 {
+        display: none;
+    }
+    #viz1589293409148 {
+        display: block;
+    }
 }
