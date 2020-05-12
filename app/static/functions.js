@@ -10,11 +10,8 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
 
-//
-// Slideshow - Infographics //
-var slideIndex = 1;
-showSlides(slideIndex);
 
+// Slideshow - Infographics // 
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
