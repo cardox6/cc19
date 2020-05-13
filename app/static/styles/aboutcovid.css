@@ -1,13 +1,11 @@
+/* Responsive Boxes */
 @media(min-width:768px){
 .container-1, .container-2, .container-3{
     display: flex;
-    /* align box height with the content 
-    align-items: flex-start*/
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 5%;
     max-height: inherit;
-    /*gap: */
     }
 }
 
@@ -16,34 +14,40 @@
         padding: 10px;
 }
 
-
 .box{
     flex: 2;
     flex-basis: 25%;
     margin: 2%;
     padding: 10px;
-    box-shadow: 0 0 6px 1px red;
+    box-shadow: 0 0 6px 1px rgba(206, 204, 204, 0.685);
     border-radius: 50px;
     background: white;
     background-image: linear-gradient(to right, rgba(255,165,0,0.05), rgba(255,165,0,0.25));
     transition: 1s;
-  }
-  
-  .box:hover{
-    transform:scale(1.2);
-    background-image: linear-gradient(to right, rgba(255,165,0,0.15), rgba(255,165,0,0.5));
-    z-index: 2;
-  }
-  
-  h3 {
-    text-shadow: 0 0 2px red;
+}
+
+/* Effect grow box on hover */
+.box:hover{
+  transform:scale(1.2);
+  background-image: linear-gradient(to right, rgba(255,165,0,0.15), rgba(255,165,0,0.5));
+  z-index: 2;
+}
+
+/* Put bullet list inside box*/
+div.box{
+    padding: 30px;
+}
+
+ /* Style of titles and paragraph */
+#abtitle {
+    text-shadow: 0 0 2px #333;
     text-align: center;
-  }
+}
   
-  p {
-    text-align: center;
-    line-height: 1.5;
-    color: #333;
-  }
+p {
+  text-align: center;
+  line-height: 1.5;
+  color: #333;
+}
   
   

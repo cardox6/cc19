@@ -3,7 +3,10 @@
 
 <div class="grid-container">
   <div class="Header"> 
-    <h1>Clean Covid 19</h1>
+<!-- Desktop title -->
+    <a href="{{ url_for ('index') }}"> <img id="title" src="/static/img/logo1.png"> </a>
+<!-- Mobile title -->
+    <a href="{{ url_for ('index') }}"> <img id="titleMob" src="/static/img/logo2.png"> </a>
   </div>
 
 <!-- Use any element to open/show the overlay navigation menu -->
@@ -29,4 +32,3 @@
 
 </div>
 {% endblock layout %}
-  <!-- -->

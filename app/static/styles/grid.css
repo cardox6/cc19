@@ -32,20 +32,28 @@ body{
   }
   
 .Header {
-    gap: 1px 1px;
     grid-area: Header;
     background-color: whitesmoke;
     color: black;
-    text-align: center;
-    margin-left: 50%;
   }
-  
+
+  /* Show Title for Desktop */
+  #title {
+    display: block;
+    padding: 20px;
+  }
+
+  /* Hide title for Mobile */
+  #titleMob { 
+    display: none;
+  }
+
 .Nav { 
     grid-area: Nav; 
     grid-column-start: 10;
+    padding: 50px;
     background-color: whitesmoke;
     color: black;
-    margin: 20%;
    }
 
 .Main { 
@@ -65,7 +73,7 @@ body{
     padding: 0.5%;
 }
 
-  /* Define the NavBar */
+/* Define the NavBar */
 /* The Overlay (background) */
 .overlay {
 /* Height & width depends on how you want to reveal the overlay (see JS below) */    
@@ -112,16 +120,6 @@ body{
     right: 45px;
     font-size: 60px;
   }
-  
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
- @media screen and (max-height: 450px) {
-  .overlay a {font-size: 10px}
-  .overlay .closebtn {
-    font-size: 20px;
-    top: 15px;
-    right: 35px;
-  }
-}
 
 @media screen and (max-width: 500px) {
   .overlay {
@@ -133,8 +131,16 @@ body{
   }
   .Nav {
     font-size: 10px;
+    margin-left: -10px;
   }
   .Foot {
     font-size: 9px;
+  }
+  #titleMob{
+    display: block;
+    
+  }
+  #title{
+    display: none;
   }
 }
