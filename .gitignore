@@ -1,2 +1,4 @@
 venv/
 OOO/
+*.pyc
+__pycache__/
