@@ -14,6 +14,7 @@ def infographics():
 def aboutcovid():
     return render_template('aboutcovid.html', title="About Covid 19")
 
+<<<<<<< HEAD
 @app.route('/global_charts')
 def charts():
     return render_template('global_charts.html', title="Global Charts")
@@ -21,3 +22,8 @@ def charts():
 @app.route('/continents_charts'
 def continents_charts():
     return render_template('continents_charts.html', title='Continents Charts')
+=======
+@app.route('/charts')
+def charts():
+    return render_template('charts.html', title="Charts")
+>>>>>>> 42d6d51... hex background. Included pie chart, responsive layout.
