@@ -1,9 +1,10 @@
 /* Define general grid */
 html{
-  background-color: whitesmoke;
+  background-color: #fafafa;
 }
 body{
   margin: 0;
+  background-color: #fafafa;
 }
 
 * {
@@ -27,13 +28,11 @@ body{
     "Main Main Main Main Main Main Main Main Main Main Main Main" "Main Main Main Main Main Main Main Main Main Main Main Main" 
     "Main Main Main Main Main Main Main Main Main Main Main Main" "Main Main Main Main Main Main Main Main Main Main Main Main" 
     "Foot Foot Foot Foot Foot Foot Foot Foot Foot Foot Foot Foot";
-    background-color: whitesmoke;
     font-family: 'Averia Serif Libre', cursive;
   }
   
 .Header {
     grid-area: Header;
-    background-color: whitesmoke;
     color: black;
   }
 
@@ -52,7 +51,6 @@ body{
     grid-area: Nav; 
     grid-column-start: 10;
     padding: 50px;
-    background-color: whitesmoke;
     color: black;
    }
 
@@ -68,7 +66,6 @@ body{
 
 .Foot { 
     grid-area: Foot;
-    background-color: whitesmoke;
     text-align: center;
     padding: 0.5%;
 }

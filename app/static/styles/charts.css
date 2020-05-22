@@ -1,0 +1,30 @@
+
+.chart_desk {
+    margin-left: 30%;
+    margin-top: 2%;
+    display:block;
+}
+
+.chart_mob {
+    padding: 10px;
+    display: none;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 700px) {
+    .chart_mob {
+        padding: 10px;
+        display: block;
+    }
+    .chart_desk {
+        display: none;
+    }
+}
+
+/* Ipad sizing */
+@media screen and (max-width: 900px) {
+    .chart_desk {
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+}

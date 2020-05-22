@@ -13,3 +13,7 @@ def infographics():
 @app.route('/aboutcovid')
 def aboutcovid():
     return render_template('aboutcovid.html', title="About Covid 19")
+
+@app.route('/charts')
+def charts():
+    return render_template('charts.html', title="Charts")
