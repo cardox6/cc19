@@ -5,8 +5,12 @@
     display:block;
 }
 
+.chart_desk1 {
+    margin-left: 15%;
+    margin-top: 2%;
+    display:block;
+}
 .chart_mob {
-    padding: 10px;
     display: none;
 }
 
@@ -19,12 +23,22 @@
     .chart_desk {
         display: none;
     }
+    .chart_desk1 {
+        display: none;
+    }
 }
+
 
 /* Ipad sizing */
 @media screen and (max-width: 900px) {
     .chart_desk {
-        margin-left: 10%;
-        margin-top: 2%;
+        display: none;
+    }
+    .chart_desk1 {
+        display: none;
+    }
+    .chart_mob {
+        margin-left: 25%;
+        display: block;
     }
 }

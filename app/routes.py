@@ -14,6 +14,10 @@ def infographics():
 def aboutcovid():
     return render_template('aboutcovid.html', title="About Covid 19")
 
-@app.route('/charts')
+@app.route('/global_charts')
 def charts():
-    return render_template('charts.html', title="Charts")
+    return render_template('global_charts.html', title="Global Charts")
+
+@app.route('/continents_charts'
+def continents_charts():
+    return render_template('continents_charts.html', title='Continents Charts')
