@@ -31,7 +31,7 @@ In order to run the code you will need to:
     
 4. Install the requirements.
 
-    `pip install requirements.txt`
+    `pip install -r requirements.txt`
     
 5. Run The Web with Flask or Gunicorn.
 
