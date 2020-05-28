@@ -2,11 +2,12 @@
 ## CLEAN COVID 19 
 
 The current project is a website with the purpose of providing clear and reliable information related to the novel Codiv-19 pandemic. 
-It consists of: 
-**Index** Updated Dashboard from Tableau Public linked to John Hopkins database.
-**About Covid** Flexbox with accurate information about Coronavirus, provided by World Health Organization, Harvard Medical School, John Hopkins.
-**Infographics** Curated infographics about Stay Home, Prevention, Symptoms. This series take part of the author's portfolio in the Infographcis Module at Code University.
-**Charts** Charts created using the reported numbers of the World Health Organization, from the source https://ourworldindata.org/coronavirus .
+It consists of: <br>
+**Index** Updated Dashboard from Tableau Public linked to John Hopkins database. <br>
+**About Covid** Flexbox with accurate information about Coronavirus, provided by World Health Organization, Harvard Medical School, John Hopkins.<br>
+**Infographics** Curated infographics about Stay Home, Prevention, Symptoms. This series take part of the author's portfolio in the Infographcis Module at Code University.<br>
+**Global Charts** Charts reflecting the global tendendies of cases and deaths, daily and cumulative. Created using the reported numbers of the European Centre for Disease Prevention and Control (ECDC), from the source https://ourworldindata.org/coronavirus .<br>
+**Continents Charts** Charts reflecting the views per continent on cases and deaths, daily and cumulative. Created using the reported numbers of the World Health Organization, from the source https://ourworldindata.org/coronavirus . <br>
 **Chatbot** A chatbot has been included. It's built with a template in Dialogflow. Basic functions providing information are active. Some functions are not operational.
 
 Development Status: Deployed.
@@ -23,7 +24,7 @@ In order to run the code you will need to:
 
 2. It is recommended to create a Virtual Enviroment for the directory.
 
-     `python3 -m venv`
+     `python3 -m venv yourvenvname`
 
 3. Activate the venv.
 
@@ -39,7 +40,7 @@ In order to run the code you will need to:
     * `gunicorn --bind 0.0.0.0:5000 wsgi:app`
 
 ### Technologies 
-Built with HTML, CSS (styling and animation), JavaScript, Python, Flask, Dialogflow, JupyterNotebooks.
+Built with HTML, CSS (styling and animation), JavaScript, Python3.7.7, Flask, Dialogflow, JupyterNotebooks.
 
 ### Deployment 
 The project has been conceived in an environment, therefore Requirements should be met in order to avoid incompatibilities. The website has been deployed on a Google Cloud Server (Ubunt 18). Files are  dinamically handled by Gunicorn, calling on Nginx for static files.
