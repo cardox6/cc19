@@ -1,12 +1,18 @@
 
+#intro{
+    line-height: 0,8;
+    text-align: center;
+}
+
+
 .chart_desk {
-    margin-left: 30%;
+    text-align: center;
     margin-top: 2%;
     display:block;
 }
 
 .chart_desk1 {
-    margin-left: 15%;
+    text-align: center;
     margin-top: 2%;
     display:block;
 }
@@ -17,7 +23,8 @@
 /* Responsiveness */
 @media screen and (max-width: 700px) {
     .chart_mob {
-        padding: 10px;
+        text-align: center;
+        
         display: block;
     }
     .chart_desk {
@@ -25,6 +32,14 @@
     }
     .chart_desk1 {
         display: none;
+    }
+    #intro{
+        font-size: 15px;
+
+    }
+    #titsize{
+        font-size: 25px;
+
     }
 }
 
@@ -38,7 +53,7 @@
         display: none;
     }
     .chart_mob {
-        margin-left: 25%;
+        text-align: center;
         display: block;
     }
 }

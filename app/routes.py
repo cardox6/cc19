@@ -18,6 +18,6 @@ def aboutcovid():
 def global_charts():
     return render_template('global_charts.html', title="Global Charts")
 
-@app.route('/continents_charts'
+@app.route('/continents_charts')
 def continents_charts():
     return render_template('continents_charts.html', title='Continents Charts')

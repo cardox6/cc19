@@ -1,9 +1,16 @@
 {% extends 'grid.html' %}
 {% block content %}
+<h1 id="titsize" style="text-align: center;">Global Charts</h1>
+<div id="intro"> <h4>The current charts represent an analysis on the 27.05.2020 of the original Covid-19 dataset provided by 
+    'Our World In Data' and the European Centre for Disease Prevention and Control (ECDC).
+    <br>You will find charts with the Global daily tendencies of new cases and deaths 
+    with an interval of 15 days. <br> In addition, you can observe the distribution of cases in a Pie Chart and compare globally 
+    all continents in a time series of daily and cumulative cases.</h4></div>
 
 
 <!-- Desktop Version --> 
 <div class='chart_desk1'>
+    <h3>Global Data</h3>
     <img src="/static/img/charts/tot_cumulative_cases.png" style="width:1000px;height:600px;"> 
 </div>
 
@@ -27,6 +34,7 @@
 <!-- Mobile Version --> 
 
 <div class='chart_mob'>
+    <h4>Global Data</h4>
     <img src="/static/img/charts/mob_tot_cumulative_cases.png" style="width:350px;height:600px;"> 
 </div>
 
