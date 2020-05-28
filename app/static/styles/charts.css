@@ -5,12 +5,17 @@
     display:block;
 }
 
+<<<<<<< HEAD
 .chart_desk1 {
     margin-left: 15%;
     margin-top: 2%;
     display:block;
 }
 .chart_mob {
+=======
+.chart_mob {
+    padding: 10px;
+>>>>>>> 42d6d51... hex background. Included pie chart, responsive layout.
     display: none;
 }
 
@@ -23,6 +28,7 @@
     .chart_desk {
         display: none;
     }
+<<<<<<< HEAD
     .chart_desk1 {
         display: none;
     }
@@ -40,5 +46,14 @@
     .chart_mob {
         margin-left: 25%;
         display: block;
+=======
+}
+
+/* Ipad sizing */
+@media screen and (max-width: 900px) {
+    .chart_desk {
+        margin-left: 10%;
+        margin-top: 2%;
+>>>>>>> 42d6d51... hex background. Included pie chart, responsive layout.
     }
 }
